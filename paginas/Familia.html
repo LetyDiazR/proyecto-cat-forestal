@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especies</title>
+    <!--Link Hoja de estilos-->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+
+        <img class="quitar-fondo" src="../imagenes/LogoUTIM.png" alt="LogoUTIM" width="150" height="150">
+        <h3 class="texto-titulo"> Universidad Tecnológica de Izúcar de Matamoros</h3>
+        <a href="#">
+            <span class="jam jam-menu header__icono"></span>
+        </a>
+
+        <nav class="nav-header"> ¨
+            <!-- comente el codigo en CSS-->
+            <ul class="flexbox__nav">
+                <li  class="nav__item">
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./Familia.html">Familia</a>
+                </li>
+                <!--<li><a href="./paginas/Pro.html">Propagación</a> </li>-->
+                <li class="nav__item">
+                    <a href="./Proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./Cursos.html">Cursos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <main class="main">
+        <form>
+            <div>
+                <h3>Consultas por especie:</h3>
+                <label for="nombre">Nombre de la especie: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre"
+                required>
+            </div>
+
+            <div>
+                <label for="familia">Familia:</label>
+                <input type="familia" id="familia" name="familia" placeholder="Ingrese la familia"
+                required>
+            </div>
+
+            <div>
+                <h3>Descripción completa </h3>
+                <label for="">Si:</label>
+                <input type="radio" name="Desc" value="si">
+                <label for="">No:</label>
+                <input type="radio" name="Desc" value="no">
+            </div>
+
+            <div>
+                <label for="">Comentario:</label>
+                <textarea name="comentario" cols="30" rows="10"></textarea>
+            </div>
+
+            
+
+            <div>
+                <button>Enviar</button>
+            </div>
+        </form>
+    </main>
+   
+    <footer class="fondo-footer">
+        <div class="nav-footer flexbox__nav">
+            <h5>Derechos reservados</h5>
+            <h5>CONTACTO</h5>
+            <a href="http://utim.edu.mx/" target="_blank">UTIM</a>
+
+        </div>
+
+    </footer>
+    
+</body>
+</html>

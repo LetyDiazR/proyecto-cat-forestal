@@ -1,0 +1,217 @@
+/*Archivo de estilos */
+/* Reseateando los estilos por defecto del navegador*/
+* { /* Selector universal el * de inicio donde indica que quite los estilos de los elementos*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.header {
+    background-color: moccasin;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;   
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.main {
+    /*background-image: url(../imagenes/cuachalalate.jpeg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed; /* Efecto Parallax */
+    margin-top: 200px;
+    min-height: 100vh;
+    width: 100;
+}
+
+.quitar-fondo {
+    filter:brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.header__logo{
+    width: 150x;
+    height: 150px;
+}
+
+.flexbox {
+   
+    display: flex; 
+}
+.footer__flex{
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid #fff;
+    padding: 2 rem 0;
+    margin-top: 2px;
+}
+.flexbox__nav {
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  
+
+}
+
+.nav__item{
+    margin-left: 16px;
+}
+.header__icono{
+    font-size: 32px;
+    text-decoration: none;
+    display: none;
+}
+
+.card {
+    background-color: #FEFEFE;
+    color: #000;
+    /* Propiedades del Modelo de Caja -> width, height, padding, margin y el border */
+    width: 25%; /* Unidades que suelo utiliza son porcentaje o pixeles */
+    height: 500px; /* Unidades que suelo utiliza son porcentaje o pixeles o Viewport */
+    /* Espaciado interno: entre el contenido y el borde */
+    padding: 16px; /* Esto se aplica a todos los lados */
+    padding: 16px 32px; /* EjeVertical y EjeHorizontal */
+    padding: 16px 32px 16px; /* Arriba EjeHorizontal abajo */
+    padding: 32px 32px 32px 32px; /* Arriba, Derecha, Abajo y Izquierda */
+    /* Seperacion externa luego del borde o limite hacia fuera es decir con otros elementos */
+    margin: 32px; 
+    margin: 16px 32px; /* EjeVertical y EjeHorizontal */
+    margin: 16px 32px 16px; /* Arriba EjeHorizontal abajo */
+    margin: 32px 32px 32px 32px; /* Arriba, Derecha, Abajo y Izquierda */
+    border: 5px solid red; /* Aplicamos un borde a todos los lados */
+    display: block;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.card__imagen {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.card__titulo {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.card__parrafo {
+    text-align: center;
+    font-size: 12px;
+    color: rgb(182, 172, 172);
+}
+
+.card--ocultar {
+    display: none;
+}
+
+.card--oscuro {
+    background-color: #333;
+    color: #fff;
+}
+
+.card__absolute {
+    background-color: navy;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    position: absolute;
+    /* top, left, right o bottom */
+    top: 2rem;
+    right: 2rem;
+} 
+
+.fondo-footer {
+    background-color: black;
+}
+.texto-titulo{
+    color:darkgreen;
+    font-size: 42px;
+    margin: 1rem;
+}
+.nav-header {
+    color: white;
+    text-decoration:  none;
+    margin: 1rem;
+}*/
+/*a{text-decoration: none;}*/
+
+.seccion2 {
+    background-color: rgb(115, 228, 213);
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.seccion2__fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav-footer {
+    background-color: #000;
+    color: white;
+    margin: 1rem;
+    padding: 2rem 1rem;
+}
+
+
+
+.texto-parrafos {
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    line-height: 2;
+    margin: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+@media screen and (max-width: 1023px) {
+    .texto-titulo {
+        color: darkgreen;
+        font-size: 20px;
+        
+    }
+    .header__logo{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .texto-titulo {
+        color: darkgreen;
+        font-size: 10px;
+    }  
+      .header__logo{
+            width: 50px;
+            height: 50px;
+        }
+}
