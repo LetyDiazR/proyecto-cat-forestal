@@ -6,26 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reforestación</title>
-    <!--Link Hoja de estilos-->
-    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Vinculacion de Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
+
     <!-- link para vincilar una libreria de iconos tipograficos - Jam Icons-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
+    <!--Link Hoja de estilos-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    
 </head>
 
 <body>
     <header class="header">
 
-        <img class="quitar-fondo" src="../imagenes/LogoUTIM.png" alt="LogoUTIM" width="150" height="150">
+        <img class="quitar-fondo header__logo" src="../imagenes/LogoUTIM.png" alt="LogoUTIM" width="150" height="150">
         <h3 class="texto-titulo"> Universidad Tecnológica de Izúcar de Matamoros</h3>
-        <a href="#">
-            <span class="jam jam-menu header__icono"></span>
+       
+        <a href="#abierto" class="header__icono">
+            <span class="jam jam-menu"></span>
         </a>
 
-        <nav class="nav-header"> ¨
-            <!-- comente el codigo en CSS-->
+        <nav class="nav-header" id="abierto">
             <ul class="flexbox__nav">
-                <li  class="nav__item">
+                <li class="nav__item">
                     <a href="../index.html">Inicio</a>
                 </li>
                 <li class="nav__item">
@@ -37,6 +44,9 @@
                 </li>
                 <li class="nav__item">
                     <a href="./Cursos.html">Cursos</a>
+                </li>
+                <li class="nav__item nav__item--oculto">
+                    <a href="#cerrado">❌</a>
                 </li>
             </ul>
         </nav>

@@ -6,17 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo Forestal</title>
+    <!-- Vinculacion de Google Fonts - Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap"
+        rel="stylesheet">
 
     <!-- link para vincilar una libreria de iconos tipograficos - Jam Icons-->
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
 
     <!-- Vincular framework bootstrap - Hoja de estilos CSS -->
     <!-- Vinculando Bootstrap la hoja de estilos de CSS - Forma Rapida sin descargar (CDN) -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Link Hoja de estilos-->
     <link rel="stylesheet" href="./css/estilos.css">
-   
+
 </head>
 
 
@@ -25,12 +31,12 @@
 
         <img class="quitar-fondo header__logo" src="./imagenes/LogoUTIM.png" alt="LogoUTIM" width="150" height="150">
         <h3 class="texto-titulo"> Universidad Tecnológica de Izúcar de Matamoros</h3>
-        <a href="#">
-            <span class="jam jam-menu header__icono"></span>
+
+        <a href="#abierto" class="header__icono">
+            <span class="jam jam-menu"></span>
         </a>
 
-        <nav class="nav-header"> ¨
-            <!-- comente el codigo en CSS-->
+        <nav class="nav-header" id="abierto">
             <ul class="flexbox__nav">
                 <li class="nav__item">
                     <a href="index.html">Inicio</a>
@@ -45,26 +51,16 @@
                 <li class="nav__item">
                     <a href="./paginas/Cursos.html">Cursos</a>
                 </li>
+                <li class="nav__item nav__item--oculto">
+                    <a href="#cerrado">❌</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section>
-            <h1>Propagación de Cactaceas</h1>
-            <div class="flexbox">
-                <div class="card card--oscuro">
-                    <img class="card__imagen" src="./imagenes/cactaceas.jpg" alt="imagen de Prop Cactace" width="500"
-                        height="500">
-                    <h2 class="card__titulo">Cactaceas</h2>
-                    <p class="card__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis
-                        eveniet ea excepturi impedit, delectus, ipsum eum veritatis ducimus quisquam odio perferendis?
-                        Nobis voluptatem possimus veritatis maiores cum illum sit?</p>
-                    <span class="card__absolute">Oferta</span> <!-- Position Absolute que quiero superponer  -->
-                </div>
 
-            </div>
-        </section>
+        
         <section class="seccion2">
             <img class="seccion2__fondo" src="./imagenes/cuachalalate.jpeg" alt="Cuachalalate" width="300" height="300">
 
@@ -89,10 +85,62 @@
 
             </div>
         </section>
+        <section class="faq1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 ">
+
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./imagenes/cactaceas.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Propagación de Cactaceas</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagenes/cuachalalate.jpeg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Propagación de cuachalalate</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="../imagenes/plagas.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Manejo integrado de plagas</h5>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
+                    </div>
+        </section>
+
     </main>
 
 
-    <footer class="fondo-footer">
+    <footer class="footer fondo-footer">
         <div class="footer__flex">
             <p>Derechos reservados UTIM</p>
         </div>
@@ -107,9 +155,11 @@
             </ul>
         </nav>
     </footer>
- <!-- Vinculando Bootstrap la hoja de javascript JS - Forma Rapida sin descargar (CDN) -->
- <!-- Vincular framework bootstrap - Hoja de javascript JS -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Vinculando Bootstrap la hoja de javascript JS - Forma Rapida sin descargar (CDN) -->
+    <!-- Vincular framework bootstrap - Hoja de javascript JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 </body>
 
